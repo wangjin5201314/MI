@@ -292,8 +292,17 @@
 	background: blue;
 	margin-left: 15px;
 }
-.F-right .f1{
-	
+.F-right .f1 img{
+	width: 316px;
+	height: 170px;
+}
+.F-right .f2 img{
+	width: 316px;
+	height: 170px;
+}
+.F-right .f3 img{
+	width: 316px;
+	height: 170px;
 }
 /* 四个图结束 */
 /* 闪购开始 */
