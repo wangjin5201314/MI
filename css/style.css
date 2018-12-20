@@ -63,67 +63,92 @@
 }
 /* 头部结束 */
 /* 导航开始 */
-.baikuai{
-	width: 100%;
-	height: 100px;
-}
-.on-nei{
-	width: 1226px;
-	height: 100%;
+.head{
+	width:1226px;
+	height:100px;
 	margin: 0 auto;
 }
-.logo{
-	width: 234px;
-	height: 100%px;
+.head-left{
 	float: left;
+	height: 100%;
 }
-.logo1{
+.head-left .logo{
 	width: 55px;
 	height: 55px;
-	margin-top: 22.5px;
-}
-.logo img{
-	width:55px;
-	height:55px;
 	background: #ff6700;
-}
-.a{
-	width: 650px;
-	height: 100px;
+	margin-top: 22.5px;
 	float: left;
-	padding-left: 18px;
 }
-
-.text-a{
+.head-left .logo img{
+	margin-top: 3px;
+	margin-left: 3px;
+}
+.list-text{
+	height: 100%;
+	float: left;
+	margin-left: 200px;
+}
+.list-text>li{
 	float: left;
 	line-height: 100px;
-	color:#333333;
-	margin-right: 18px;
+	padding: 0px 10px;
+	cursor: pointer;
+	font-size: 16px;
+	color: #333;
 }
-.b{
-	width: 300px;
-	height: 100%;
+.head-right{
 	float: right;
+	height: 100%;
 }
-.b-box1{
+.sousuo-box{
+	width: 296px;
+	height: 50px;
+	margin-top: 25px;
+	border: 1px solid #e0e0e0;
+	box-sizing:border-box;
+}
+.sousuo{
 	width: 244px;
 	height: 48px;
-	border: 1px solid #e0e0e0;
-	margin: 25px 0;
 	float: left;
-}	
-.b-box2{
-	width: 52px;
-	height: 48px;
-	border: 1px solid #e0e0e0;
-	float: right;
-	margin: 25px 0;
+	border-right: 1px solid #e0e0e0;
+	box-sizing: border-box;
+	position: relative;
 }
-.b-box2>i{
-	margin:11px 11px;
+.sousuo input{
+	width: 243px;
+	height: 100%;
+	border: none;
+	outline:none;
+	padding-left: 20px;
+	box-sizing: border-box;
+}
+.sousuo-neirong{
+	position: absolute;
+	right: 10px;
+	top: 0;
+	bottom: 0;
+	margin: auto 0;
+	height: 24px;
+}
+.sousuo-neirong span{
+	font-size: 12px;
+	color: #8c8c8c;
+	background: #eee;
+	padding: 3px;
+}
+.sousuo-neirong .zhongjian{
+	margin: 0 10px;
+}
+.sousuo-icon{
+	width: 50px;
+	height: 48px;
+	float: left;
+	text-align: center;
 	line-height: 48px;
 	font-size: 30px;
 }
+
 /* 导航结束 */
 /* 轮翻开始 */
 .lunfan{
@@ -148,51 +173,129 @@
 	left: 0;
 	top: 0;
 }
-.lunfan-img-box img{
-	width:100%;
+.lunfan-img-box>ul>li{
+	width: 100%;
 	height: 100%;
 	position: absolute;
 	left: 0;
-	top: 0;
+	top:0;
+}
+.lunfan-img-box>ul>li>img{
+	width:100%;
+	height: 100%;
+	
 }
 .lunfan-list-box{
 	width: 234px;
 	height: 460px;
-	background:pink;	
+	background:rgba(0,0,0,0.8);	
 	position: absolute;
 	left: 0;
 	top: 0;
 }
+.lunfan-list-box>ul{
+	width: 100%;
+	height: 100%;
+	padding: 20px 0;
+	box-sizing: border-box;
+}
+.lunfan-list-box>ul>li{
+	width: 100%;
+	height: 42px;
+	color: white;
+	cursor: pointer;
+}
+.lunfan-list-box .left{
+	height: 100%;
+	line-height: 42px;
+	float: left;
+	margin-left: 30px;
+	font-size: 14px;
+}
+.lunfan-list-box .right{
+	height: 100%;
+	line-height: 42px;
+	float: right;
+	margin-right: 22px;
+	font-size: 14px;
+}
 .lunfan-dian-box{
 	width: 200px;
 	height: 10px;
-	background: orange;
 	position: absolute;
 	right: 0;
-	bottom: 20px;
+	bottom: 30px;
+}
+.lunfan-dian-box>div{
+	float: right;
+	margin-right: 20px;
+}
+.lunfan-dian-box>div>div{
+	width:10px;
+	height: 10px;
+	background: rgba(0,0,0,0.5);
+	float: left;
+	margin-left: 10px;
+	border-radius:50%;
+	border: 2px solid rgba(255,255,255,0.2);
+	box-sizing: border-box;
+	cursor: pointer;
+}
+.lunfan-dian-box>div>.hd{
+	background: rgba(0,0,0,0.2);
+	border: 2px solid rgba(0,0,0,0.5);
 }
 .lunfan-zuojiantou-box{
 	width: 41px;
 	height: 69px;
-	background: black;
 	position: absolute;
 	left: 234px;
 	bottom: 0px;
 	top: 0;
 	margin: auto;
+	border-top-right-radius:5px;   						    /* //右上角变圆角 */
+	border-bottom-right-radius:5px;   						/* //右下角变圆角 */
+	background-image: url(../img/icon-jiantou.png);  	    /* //精灵图 用四个中的第一个不用改变 */
 }
 .lunfan-youjiantou-box{
 	width: 41px;
 	height: 69px;
-	background: black;
 	position: absolute;
-	right: 0px;
 	bottom: 0px;
 	top: 0;
 	margin: auto;
+	right: 0;
+	border-top-left-radius:5px;								/* //左上角变圆角 */
+	border-bottom-left-radius:5px;							/* //左下角变圆角 */
+	background-image: url(../img/icon-jiantou.png);			/* //精灵图 用四个中的第三个 需要设置值 */
+	background-position:-42px 0;							/* 	背景图片居中 */
+	background-repeat: no-repeat;							/* 背景图片不重复 */
 }
-
 /* 轮翻结束 */
+/* 四个图开始 */
+.F{
+	width: 1226px;
+	height: 170px;
+	margin: 0 auto;
+	margin-top: 15px;
+}
+.F-left{
+	width: 233px;
+	height: 170px;
+	background: yellow;
+	float: left;
+}
+.F-right li{
+	width: 316px;
+	height: 170px;
+	float: left;
+	background: blue;
+	margin-left: 15px;
+}
+.F-right .f1{
+	
+}
+/* 四个图结束 */
 /* 闪购开始 */
 .shangou{
 	width: 1226px;
@@ -286,7 +389,6 @@
 	width:calc(234px * 4 + 14px * 3);
 	height:100%;
 	float: left;
-	
 }
 .shangou-bottom-right li{
 	width: 234px;
@@ -396,6 +498,7 @@ main{
 	width: 140px;
 	height: 140px;
 	margin-top: 30px;
+	
 }
 .wntj-bottom  .tu1-text{
 	font-size: 18px;
@@ -408,7 +511,7 @@ main{
 	color: red;
 	margin: 10px 15px 0 15px;
 }	
-.wntj-bottom #A{
+.wntj-bottom .A{
 	margin-left: 0;
 }
 /* 为你推荐结束 */
