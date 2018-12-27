@@ -10,7 +10,7 @@
 	margin: 0 auto;
 }
 .on-left{
-	height: 100%;
+	height: 40px;
 	float: left;
 }
 .left-text{
@@ -312,7 +312,7 @@
 .lunfan-dian-box>div>div{
 	width:10px;
 	height: 10px;
-	background: rgba(0,0,0,0.5);
+	background: rgba(0,0,0,0.3);
 	float: left;
 	margin-left: 10px;
 	border-radius:50%;
@@ -322,7 +322,11 @@
 }
 .lunfan-dian-box>div>.hd{
 	background: rgba(0,0,0,0.2);
-	border: 2px solid rgba(0,0,0,0.3);
+	border: 2px solid rgba(0,0,0,0.4);
+}
+.lunfan-dian-box>div>div:hover{
+	background: rgba(0,0,0,0.2);
+	border: 2px solid rgba(0,0,0,0.4);
 }
 .lunfan-zuojiantou-box{
 	width: 41px;
@@ -479,7 +483,7 @@
 	height: 438px;
 	margin: 0 auto;
 	margin-bottom: 40px;
-	}
+}
 .shangou-top{
 	width: 100%;
 	height: 58px;
@@ -497,6 +501,7 @@
 	margin-top: 17px;
 	box-sizing: border-box;
 	border: 1px solid #e7e7e7;
+	cursor: pointer;
 }
 .shangou-top-ic .left{
 	width: 34px;
@@ -506,12 +511,18 @@
 	float: left;
 	border-right: 1px solid #e7e7e7;
 }
+.shangou-top-ic .left:hover{
+	color: orange;
+}
 .shangou-top-ic .right{
 	width: 34px;
 	height: 22px;
 	line-height: 22px;
 	text-align: center;
 	float: left;
+}
+.shangou-top-ic .right:hover{
+	color: orange;
 }
 .shangou-bottom{
 	width:100%;
@@ -585,6 +596,8 @@
 	background: #E53935;
 	margin: 0 85px;
 	color: white;
+	font-size: 12px;
+	text-align: center;
 }
 .sh{
 	width: 137.67px;
@@ -626,8 +639,7 @@
 .shangou-bottom-right .li4{
 	border-top: 1px solid #e53935;
 }
-
-
+/* 闪购结束 */
 main{
 	width: 100%;
 	height: 100%;
@@ -655,7 +667,6 @@ main{
 	line-height: 58px;
 }
 .shouji-top-right{
-	
 	float: right;
 	margin-top: 20px;
 	transition: all 0.5s;
@@ -696,6 +707,7 @@ main{
 	margin-left: 14px;
 	margin-bottom: 14px;
 	position: relative;
+	transition: all 0.5s;
 }
 .shouji-bottom .right>ul>li:hover{
 	transform:translate(0,-2px);
@@ -865,7 +877,7 @@ main{
 	width: 234px;
 	height: 75px;
 	background:#ff6700;
-	margin-top: 26px;
+	margin-top: 28px;
 	transition: all 0.5s;
 }
 .jiadian-bottom .right>ul>li .yc-list span{
@@ -1106,7 +1118,7 @@ main{
 	width: 234px;
 	height: 75px;
 	background:#ff6700;
-	margin-top: 26px;
+	margin-top: 28px;
 	transition: all 0.5s;
 }
 .zhineng-bottom .right>ul>li .yc-list span{
@@ -1186,7 +1198,6 @@ main{
 	height: 686px;
 	margin: 0 auto;
 	margin-bottom: 20px;
-
 }
 .dapei-top{
 	width: 100%;
@@ -1274,7 +1285,7 @@ main{
 	width: 234px;
 	height: 75px;
 	background:#ff6700;
-	margin-top: 26px;
+	margin-top: 28px;
 	transition: all 0.5s;
 }
 .dapei-bottom .right>ul>li .yc-list span{
@@ -1439,7 +1450,7 @@ main{
 	width: 234px;
 	height: 75px;
 	background:#ff6700;
-	margin-top: 26px;
+	margin-top: 28px;
 	transition: all 0.5s;
 }
 .peijian-bottom .right>ul>li .yc-list span{
@@ -1602,7 +1613,7 @@ main{
 	width: 234px;
 	height: 75px;
 	background:#ff6700;
-	margin-top: 26px;
+	margin-top: 28px;
 	transition: all 0.5s;
 }
 .zhoubian-bottom .right>ul>li .yc-list span{
@@ -1707,6 +1718,10 @@ main{
 	text-align: center;
 	float: left;
 	border-right: 1px solid #333333;
+	cursor: pointer;
+}
+.wntj-top-ic .left:hover{
+	color: orange;
 }
 .wntj-top-ic .right{
 	width: 34px;
@@ -1714,6 +1729,10 @@ main{
 	line-height: 22px;
 	text-align: center;
 	float: left;
+	cursor: pointer;
+}
+.wntj-top-ic .right:hover{
+	color: orange;
 }
 .wntj-bottom{
 	width: 100%;
@@ -1856,53 +1875,104 @@ main{
 	margin-left: 14px;
 	background: white;
 	transition: all 0.5s;
+	position:relative ;
 }
 .neirong-bottom>ul>li:hover{
 	transform:translate(0,-2px);
 	box-shadow:0 5px 30px 2px rgba(0,0,0,0.2);
+	display: block;
 }
 .neirong-bottom .B{
 	margin-left: 0;
 }
-.neirong-bottom>ul>li img{
-	width: 296px;
-	height: 220px;
-}
 .neirong-bottom  .tu1-text{
-	font-size: 14px;
-	margin:24px 25px 0 25px;
+	font-size: 20px;
+	margin:15px 30px 0 30px;
 	color: #333333;
 }
 .neirong-bottom  .tu1-text1{
-	font-size: 14px;
-	margin:30px 25px 0 25px;
-	color: #B0B0B0;
+	font-size: 16px;
+	margin:50px 25px 0 25px;
+	color:#ffac13;
+	text-align: center;
 }
 .neirong-bottom  .tu1-text2{
-	font-size: 14px;
-	margin:10px 100px 0 25px;
-	/* overflow: hidden; */
-	text-overflow:ellipsis ;
-	white-space: nowrap;
+	font-size: 12px;
+	color: #b0b0b0;
+	text-align: center;
+	margin:10px 40px;
 	margin: left;
 }
-.neirong-bottom .tu1-text2 i{
-	font-size: 14px;
-	color: #B0B0B0;
+.neirong-bottom  .tu1-text3{
+	font-size: 12px;
+	color:#333333;
+	text-align: center;
+	margin:14px 40px;
 	margin: left;
 }
-.neirong-bottom .tu1-text2 span{
-	font-size: 14px;
-	color: red;
-	margin: left;
+.neirong-bottom>ul>li img{
+	width: 214px;
+	height: 156px;
+	margin: 0 40px;
+}
+.neirong-bottom>ul>li .icz{
+	font-size: 30px;
+	color: rgba(0,0,0,0.4);
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 191px;
+}
+.neirong-bottom>ul>li:hover .icz{
+	display: block;
+}
+.neirong-bottom>ul>li .icy{
+	font-size: 30px;
+	color: rgba(0,0,0,0.4);
+	display: none;
+	position: absolute;
+	right: 0;
+	top: 191px;
+}
+.neirong-bottom>ul>li:hover .icy{
+	display: block;
+}
+.neirong-dian-box{
+	width: 200px;
+	height: 10px;
+	position: absolute;
+	right: 0;
+	bottom: 30px;
+}
+.neirong-dian-box>div{
+	/* float: right; */
+	margin-right: 100px;
+}
+.neirong-dian-box>div>div{
+	width:10px;
+	height: 10px;
+	background: rgba(0,0,0,0.3);
+	float: left;
+	margin-left: 10px;
+	border-radius:50%;
+	border: 2px solid rgba(255,255,255,0.2);
+	box-sizing: border-box;
+	cursor: pointer;
+}
+.neirong-dian-box>div>.hd{
+	background: rgba(0,0,0,0.2);
+	border: 2px solid rgba(0,0,0,0.4);
+}
+.neirong-dian-box>div>div:hover{
+	background: rgba(0,0,0,0.2);
+	border: 2px solid orange;
 }
 /* 内容结束 */
 /* 视频开始 */
 .shipin{
 	width: 1226px;
-	height: 478px;
+	height: 400px;
 	margin: 0 auto;
-	margin-bottom: 100px;
 }
 .shipin-top{
 	width: 100%;
@@ -1913,6 +1983,16 @@ main{
 	color: #333333;
 	line-height: 58px;
 	float: left;
+}
+.shipin-top-right{
+	float: right;
+	margin-top: 20px;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+.shipin-top-right:hover{
+	color: #ff6700;
+	padding-bottom: 5px;
 }
 .shipin-bottom{
 	width: 1226px;
@@ -1993,3 +2073,122 @@ main{
 	color: red;
 	margin: left;
 }
+/* 服务开始 */
+.fuwu{
+	width: 1226px;
+	height: 275px;
+	margin: 0 auto;
+}
+.fuwu-top{
+	width: 100%;
+	height: 80px;
+	position: relative;
+}
+.fuwu-top .fuwu1{
+	width: 244.4px;
+	height: 79px;
+	line-height: 79px;
+	font-size: 16px;
+	text-align: center;
+	float: left;
+	position: relative;
+
+}
+.fuwu-top .fuwu1:hover{
+	color: orange;
+}
+.fuwu-top>ul>li i{
+	height: 80px;
+	margin-left: 28px;
+	position: absolute;
+	top: 0px;
+	right: 0;
+}
+.fuwu-top>ul>li .line{
+	width: 1226px;
+	border: 1px solid rgba(0,0,0,0.2);
+	position: absolute;
+	top: 80px;
+	left: 0;
+}
+.fuwu-bottom{
+	width: 100%;
+	height: 194px;
+	margin-bottom: 100px;
+}
+.fuwu-bottom-zuo{
+	width: 976px;
+	height: 100%;
+	float: left;
+	position: relative;
+}
+.fuwu-bottom-zuo .top{
+	width: 976px;
+	height: 50px;
+}
+.fuwu-bottom-zuo .top .top-text{
+	width: 162.666px;
+	height:100% ;
+	line-height: 70px;
+	text-align: center;
+	float: left;
+	font-size: 14px;
+}
+
+.fuwu-bottom-zuo .bottom{
+	width: 100%;
+	height: 124px;
+}
+.fuwu-bottom-zuo .bottom .bottom-text1{
+	width: 162.666px;
+	height:25px ;
+	line-height: 70px;
+	text-align: center;
+	float: left;
+	font-size: 12px;
+
+}
+.fuwu-bottom-zuo .bottom i{
+	width:1px ;
+	height: 100px;
+	background: #000000;
+	position: absolute;
+	top: 40px;
+	right: 0;
+}
+.fuwu-bottom-you{
+	width: 250px;
+	height: 100%;
+	float: right;
+}
+.fuwu-bottom-you .text{
+	font-size: 22px;
+	color: #ff6700;
+	text-align: center;
+	margin-top: 18px;
+}
+.fuwu-bottom-you .text1{
+	font-size: 12px;
+	color: #616161;
+	text-align: center;
+	margin-top: 3px;
+}
+.fuwu-bottom-you .text2{
+	font-size: 12px;
+	color: #616161;
+	text-align: center;
+	margin-top: 3px;
+}
+.fuwu-bottom-you .text3 .hz-text{
+	width: 120px;
+	height: 30px;
+	border:1px solid #ff6700;
+	background: #fff;
+	margin-left: 65px;
+	margin-top: 20px;
+	color:#ff6700;
+	text-align: center;
+	line-height: 30px;
+	font-size: 12px;
+}
+/* 服务结束 */
