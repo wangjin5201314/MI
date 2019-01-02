@@ -2092,7 +2092,7 @@ main{
 	position: relative;
 
 }
-.fuwu-top .fuwu1:hover{
+.fuwu-top .fuwu1 span:hover{
 	color: orange;
 }
 .fuwu-top>ul>li i{
@@ -2149,7 +2149,7 @@ main{
 .fuwu-bottom-zuo .bottom i{
 	width:1px ;
 	height: 100px;
-	background: #000000;
+	background: rgba(0,0,0,0.2);
 	position: absolute;
 	top: 40px;
 	right: 0;
