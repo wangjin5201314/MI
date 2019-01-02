@@ -108,6 +108,9 @@ main{
 	float: left;
 	margin-left: 20px;
 }
+/* .tuijian-box .top .right .text .type1{
+	background: #0000FF;
+} */
 .tuijian-box .top .right .text .right-text{
 	font-size: 16px;
 	color: black;

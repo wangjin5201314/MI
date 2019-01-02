@@ -198,7 +198,7 @@
 .fuwu-top{
 	width: 100%;
 	height: 80px;
-	border-bottom: 1px solid black;
+	position: relative;
 }
 .fuwu-top .fuwu1{
 	width: 244.4px;
@@ -222,7 +222,7 @@
 }
 .fuwu-top>ul>li .line{
 	width: 1226px;
-	/* border: 1px solid rgba(0,0,0,0.2); */
+	border: 1px solid rgba(0,0,0,0.2);
 	position: absolute;
 	top: 80px;
 	left: 0;
@@ -329,7 +329,7 @@
 	margin-top: 20px;
 	float: left;
 }
-.dibubox div:hover{
+.dibubox .left-text:hover{
 	color:orange;
 }
 .dibubox .xia{
@@ -340,6 +340,22 @@
 }
 .dibubox .xia div{
 	font-size: 12px;
+}
+.dibubox .wenzi2 i:hover{
+	color:orange;
+	cursor: pointer;
+}
+.dibubox .wenzi3 i:hover{
+	color:orange;
+	cursor: pointer;
+}
+.dibubox .wenzi4 i:hover{
+	color:orange;
+	cursor: pointer;
+}
+.dibubox .wenzi1 i:hover{
+	color:orange;
+	cursor: pointer;
 }
 .BJ{
 	width: 1226px;
@@ -354,4 +370,8 @@
 	line-height: 100px;
 	text-align: center;
 }
-
+.maodian img{
+	position: fixed;
+	right: 30px;
+	bottom:100px;
+}

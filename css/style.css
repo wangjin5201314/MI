@@ -2211,7 +2211,7 @@ main{
 	margin-top: 20px;
 	float: left;
 }
-.dibubox div:hover{
+.dibubox .left-text:hover{
 	color:orange;
 }
 .dibubox .xia{
@@ -2222,6 +2222,22 @@ main{
 }
 .dibubox .xia div{
 	font-size: 12px;
+}
+.dibubox .wenzi2 i:hover{
+	color:orange;
+	cursor: pointer;
+}
+.dibubox .wenzi3 i:hover{
+	color:orange;
+	cursor: pointer;
+}
+.dibubox .wenzi4 i:hover{
+	color:orange;
+	cursor: pointer;
+}
+.dibubox .wenzi1 i:hover{
+	color:orange;
+	cursor: pointer;
 }
 .BJ{
 	width: 1226px;
