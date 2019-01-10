@@ -190,6 +190,10 @@
 }
 /* 导航结束 */
 /* 服务开始 */
+.baikuai{
+	width: 100%;
+	background: white;
+}
 .fuwu{
 	width: 1226px;
 	height: 275px;
