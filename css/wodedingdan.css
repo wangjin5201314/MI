@@ -46,12 +46,13 @@ main{
 	line-height:33px;
 	margin-left: 50px;
 }
-.big-box .left>ul>li:hover{
+.big-box .left>ul .wx:hover{
 	color: #757575;
 	cursor: pointer;
 }
 .big-box .left>ul .xz{
 	color: #ff6700;
+	cursor: pointer;
 }
 .big-box .right{
 	width: 978px;
@@ -155,20 +156,6 @@ main{
 	padding-left: 20px;
 	box-sizing: border-box;
 }
-.big-box .right .youxiaodingdan .right .sousuo-neirong1{
-	position: absolute;
-	right: 10px;
-	top: 12px;
-	bottom: 0;
-	margin:0 auto;
-	height: 24px;
-}
-.big-box .right .youxiaodingdan .right .sousuo-neirong1 span{
-	font-size: 12px;
-	color: #8c8c8c;
-	padding: 3px;
-	margin-top: 20px;
-}
 .big-box .right .youxiaodingdan .right .sousuo-icon{
 	width: 50px;
 	height: 48px;
@@ -178,20 +165,20 @@ main{
 	font-size: 30px;
 	border-left: 1px solid #e0e0e0;
 }
-.shangpin-list{
+.big-box .right .shangpin-list{
 	width: 882px;
 	height: 231px;
 	margin: 0 auto;
 	margin-top: 10px;
 	border: 1px solid #ff6700;
 }
-.shangpin-list .top{
+.big-box .right .shangpin-list .top{
 	width: 882px;
 	height: 108px;
 	border-bottom: 1px solid #ff6700;
 	overflow: hidden;
 }
-.shangpin-list .top .dengdai{
+.big-box .right .shangpin-list .top .dengdai{
 	width: 400px;
 	font-size: 20px;
 	color: #ff6700;
@@ -199,53 +186,53 @@ main{
 	margin-left: 32px;
 	margin-bottom:10px;
 }
-.shangpin-list .top a{
+.big-box .right .shangpin-list .top a{
 	margin-left: 32px;
 	font-size: 16px;
 	color: #757575;
 }
-.shangpin-list .top span{
+.big-box .right .shangpin-list .top span{
 	float: right;
 	margin-right: 20px;
 }
-.shangpin-list .top span i{
+.big-box .right .shangpin-list .top span b{
 	height: 18px;
     font-size: 28px;
     color: #333;
-	
+	font-weight: 1000;
 }
-.shangpin-list .bottom{
+.big-box .right .shangpin-list .bottom{
 	width: 882px;
 	height: 122px;
 	margin-top:22px ;
 	display: flex;
 }
-.shangpin-list .bottom img{
+.big-box .right .shangpin-list .bottom img{
 	width: 80px;
 	height: 80px;
 	margin: 0px 0 0 31px;
 }
-.shangpin-list .bottom img:hover{
+.big-box .right .shangpin-list .bottom img:hover{
 	cursor: pointer;
 }
-.shangpin-list .bottom .wenzi-box{
+.big-box .right .shangpin-list .bottom .wenzi-box{
 	width: 410px;
 	height: 80px;
 }
-.shangpin-list .bottom .wenzi-box .text1{
+.big-box .right .shangpin-list .bottom .wenzi-box .text1{
 	color: #333;
 	font-size: 16px;
 	margin-left: 10px;
 }
-.shangpin-list .bottom .wenzi-box .text{
+.big-box .right .shangpin-list .bottom .wenzi-box .text{
 	margin-top: 20px;
 }
-.shangpin-list .bottom .anniu{
+.big-box .right .shangpin-list .bottom .anniu{
 	width: 340px;
 	height: 80px;
 	float: right;
 }
-.shangpin-list .bottom .anniu .lijifukuan{
+.big-box .right .shangpin-list .bottom .anniu .lijifukuan{
 	width: 118px;
 	height: 32px;
 	background: #2196F3;
@@ -253,20 +240,20 @@ main{
 	text-align: center;
 	line-height: 32px;
 }
-.shangpin-list .bottom .anniu .fk{
+.big-box .right .shangpin-list .bottom .anniu .fk{
 	background: #ff6700;
 	color: white;
 	border: 1px solid #ff6700;
 }
-.shangpin-list .bottom .anniu .fk:hover{
+.big-box .right .shangpin-list .bottom .anniu .fk:hover{
 	cursor: pointer;
 }
-.shangpin-list .bottom .anniu .xq{
+.big-box .right .shangpin-list .bottom .anniu .xq{
 	margin-top: 8px;
 	border: 1px solid #0e0e0e;
 	background: white;
 }
-.shangpin-list .bottom .anniu .xq:hover{
+.big-box .right .shangpin-list .bottom .anniu .xq:hover{
 	cursor: pointer;
 	background: #757575;
 	color: white;

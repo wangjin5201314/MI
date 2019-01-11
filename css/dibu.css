@@ -78,6 +78,12 @@
 	line-height: 40px;
 	color:#b0b0b0;
 }
+.right-twenzi i{
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 40px;
+	margin-top: 10px;
+}
 .right-twenzi:hover{
 	color: white;
 }
