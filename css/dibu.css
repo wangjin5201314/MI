@@ -222,6 +222,7 @@
 }
 .fuwu-top .fuwu1 span:hover{
 	color: orange;
+	cursor: pointer;
 }
 .fuwu-top>ul>li i{
 	height: 80px;
@@ -268,11 +269,15 @@
 .fuwu-bottom-zuo .bottom .bottom-text1{
 	width: 162.666px;
 	height:25px ;
-	line-height: 70px;
+	line-height: 25px;
 	text-align: center;
 	float: left;
+	margin-top: 8px;
 	font-size: 12px;
-
+}
+.fuwu-bottom-zuo .bottom .bottom-text1:hover{
+	color: #FF6700;
+	cursor: pointer;
 }
 .fuwu-bottom-zuo .bottom i{
 	width:1px ;
@@ -341,6 +346,7 @@
 }
 .dibubox .left-text:hover{
 	color:orange;
+	/* cursor: pointer; */
 }
 .dibubox .xia{
 	width: 1155px;
