@@ -8,9 +8,7 @@ nav{
 	width: 1130px;
 	height: 98px;
 	margin: 0px auto;
-
 }
-
 .MI-logo {
 	width: 200px;
 	height: 98px;
@@ -57,7 +55,7 @@ nav{
 	height: 82px;
 	display: flex;
 }
-.layout .top ul>li{
+.layout .top ul li{
 	width: 204.5px;
 	height: 82px;
 	padding: 27px 0 24px;
@@ -67,11 +65,14 @@ nav{
 	box-sizing: border-box;
 	cursor: pointer;
 }
-.layout .top ul>li:hover{
-	color: #f56600;
+.layout .top ul li:hover{
+	color: #f56600 !important;
 }
 .layout .top ul .xz{
 	color: #f56600;
+}
+.layout .top ul .wx{
+	color: rgba(0,0,0,0.6);
 }
 .layout .top ul .line{
 	width: 1px;
@@ -128,6 +129,7 @@ nav{
 	margin-left: 31px;
 	margin-top: 24px;
 	cursor: pointer;
+	outline: none;
 }
 .layout .bottom ul .zh .other_panel{
 	width: 346px;
