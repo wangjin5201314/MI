@@ -21,7 +21,7 @@ a{
 	text-decoration: none;
 	color: black;	
 }
-.clear::after{			//伪元素选择器
+.clear::after{			/* 伪元素选择器 */
 	content: "";
 	display: block;
 	width: 0;

@@ -48,6 +48,21 @@
 	float: left;
 	position: relative;
 } 
+.zhongjian .left .tu-box{
+	width: 560px;
+	height: 560px;
+	position:relative;
+}
+.zhongjian .left .tu-box li{
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+.zhongjian .left .tu-box .xz{
+	opacity: 1;
+	z-index: 5;
+}
 .zhongjian .left img{
 	width: 560px;
 	height: 560px;
@@ -58,16 +73,18 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	z-index: 20;
 }
 .zhongjian .left .dian-box .line{
 	width: 52px;
 	border-top: 4px solid #757575;
+	cursor: pointer;
 }
 .zhongjian .left .dian-box .line:hover{
 	background: rgba(0,0,0,0.2);
 	border-top: 4px solid black;
 }
-.zhongjian .left .dian-box .line1{
+.zhongjian .left .dian-box .active{
 	border-color: black;
 }
 .zhongjian .left .dian-box .line2{
@@ -85,6 +102,7 @@
 	background-image: url(../img/icon-jiantou.png);  	    /* //精灵图 用四个中的第一个不用改变 */
 	cursor: pointer;
 	background-position:-84px 0;
+	z-index: 10;
 }
 .zhongjian .left .zuojiantou:hover{
 	background-image: url(../img/icon-jiantou.png); 
@@ -98,7 +116,8 @@
 	top: 245.5px;
 	background-image: url(../img/icon-jiantou.png);			/* //精灵图 用四个中的第三个 需要设置值 */
 	background-position:-126px 0;							/* 	背景图片居中 */
-	background-repeat: no-repeat;				
+	background-repeat: no-repeat;
+	z-index: 10;
 }
 .zhongjian .left .youjiantou:hover{
 	background-image: url(../img/icon-jiantou.png); 
