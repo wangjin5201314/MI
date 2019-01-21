@@ -93,8 +93,14 @@
 /* 头部结束 */
 /* 导航开始 */
 .head{
+	width: 100%;
+	height: 96px;
+	background: white;
+	border-bottom: 1px solid white;
+}
+.headbox{
 	width:1226px;
-	height:100px;
+	height:96px;
 	margin: 0 auto;
 }
 .head-left{
@@ -117,15 +123,18 @@
 	float: left;
 	margin-left: 200px;
 }
-.list-text>li{
+.list-text>i{
 	float: left;
-	line-height: 100px;
+	line-height:96px;
 	padding: 0px 10px;
 	cursor: pointer;
 	font-size: 16px;
 	color: #333;
 }
-.list-text>li:hover{
+.list-text span:hover{
+	color:#ff6700;
+}
+.list-text>i:hover{
 	color:#ff6700;
 }
 .head-right{
@@ -216,33 +225,33 @@
 	color:white ;
 }
 .daohangtuijian{
-	width: 100vw;
-	height: 230px;
+	width: 100%;
+	height: 0px;
 	background: white;
 	border-top: 1px solid #E0E0E0;
-	box-shadow: 0px 2px 1px 2px rgb(0,0,0,0.2);
+	box-shadow: 0px 1px 2px rgb(0,0,0,0.2);
 	z-index: 35;
+	transition: all 0.3s;
 	position: absolute;
-	/* top: 135px; */
-	top: -105px;
+	top: 135px;
 	left: 0;
-	display: none;
 }
 .daohangtuijian ul{
 	width: 1226px;
-	height: 100%;
+	height: 0px;
 	margin: 0 0 auto 62px;
 	position: absolute;
 	top: 0;
 	left: 0;
+	display: none;
 }
-.daohangtuijian ul li{
-	width: 202px;
+ .daohangtuijian ul li{
+	width: 200px;
 	height: 230px;
 	float: left;
 	position: relative;
 }
-.daohangtuijian ul li img{
+ .daohangtuijian ul li img{
 	width: 160px;
 	height:110px;
 	margin-top: 50px;
@@ -259,7 +268,7 @@
 	color: #FF6700;
 	margin-top: 4px;
 }
-.daohangtuijian ul li .xinping{
+ .daohangtuijian ul li .xinping{
 	width: 66px;
 	height: 22px;
 	text-align: center;
@@ -271,10 +280,11 @@
 	top: 0;
 	left: 65px;
 }
-.daohangtuijian ul span{
+ .daohangtuijian ul span{
 	width: 1px;
 	height: 100px;
 	margin-top: 50px;
+	padding: 0 0;
 	border-right: 1px solid #E0E0E0;
 	float: left;
 }
@@ -286,6 +296,7 @@
 	background: red;
 	margin: 0 auto;
 	position: relative;
+	margin-top: 10px;
 }
 .lunfan-box{
 	width: 1226px;

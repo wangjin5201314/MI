@@ -53,7 +53,7 @@
 	line-height: 83px;
 }
 main{
-	width: 100vw;
+	width: 100%;
 	background: #f5f5f5;
 }
 .tuijian-box{
@@ -133,8 +133,20 @@ main{
 	height: 200px;
 	margin-top: 48px;
 }
-.tuijian-box .bottom .goods .shang img{
-	margin-left: 48px;
+.tuijian-box .bottom .goods .shang div{
+	width: 296px;
+	height: 200px;
+	margin-top: 48px;
+	position: relative;
+}
+.tuijian-box .bottom .goods .shang div img{
+	position: absolute;
+	top: 48px;
+	left: 48px;
+	display: none;
+}
+.tuijian-box .bottom .goods .shang div .xz{
+	display: block;
 }
 .tuijian-box .bottom .goods .xia{
 	width: 100%;
@@ -157,10 +169,21 @@ main{
 .tuijian-box .bottom .goods .xia p del{
 	color:#b0b0b0;
 }
-.tuijian-box .bottom .goods .xia img{
+.tuijian-box .bottom .goods .xia .tubox{
+	width: 80px;
+	height: 34px;
 	position: absolute;
 	top: 90px;
-	left: 130px;
+	left: 110px;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+}
+.tuijian-box .bottom .goods .xia .tubox img{
+	border: 1px solid #e0e0e0;
+}
+.tuijian-box .bottom .goods .xia .tubox img:hover{
+	border: 1px solid #ff6700;
 }
 .tuijian-box .bottom .goods .xia .cuxiao{
 	width: 100%;
@@ -212,13 +235,23 @@ main{
 	width: 100%;
 	height: 300px;
 	margin-top: 36px;
-	display: flex;
-	justify-content: space-between;
+	overflow: hidden;
 }
-.xihuan .bottom div{
+.xihuan .bottom ul{
+	width: 2452px;
+	transition: all 1s;
+	position: relative;
+	left: 0;
+}
+.xihuan .bottom ul li{
 	width: 234px;
 	height: 300px;
 	background: white;
+	margin-left: 14px;
+	float: left;
+}
+.xihuan .bottom ul .tu{
+	margin-left: 0;
 }
 .xihuan .bottom .tu1 .shang{
 	width: 100%;
@@ -261,24 +294,27 @@ main{
 	justify-content: center;
 	align-items: center;
 }
-.dian .dian1{
+.dian>li{
+	width: 10px;
+	height: 10px;
+	background: #E0E0E0;
+	border-radius: 50%;
+	box-sizing: border-box;
+	margin-left: 5px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+.dian li:hover{
+	background: #FF6700;
+}
+.dian .xz{
 	width: 10px;
 	height: 10px;
 	border-radius: 50%;
 	border: 2px solid orange;
 }
-.dian .wu{
-	width: 10px;
-	height: 10px;
-}
-.dian .dian2{
-	width: 10px;
-	height: 10px;
-	border-radius: 50%;
-	background:#b0b0b0;
-}
 .kuai{
-	width: 100vw;
+	width: 100%;
 	height: 100px;
 	background: #f5f5f5;
 }

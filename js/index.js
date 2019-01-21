@@ -1,32 +1,37 @@
 window.onload = function() {
 //下拉推荐开始
-let daohang = document.querySelectorAll(".list-text li");
+let daohang = document.querySelectorAll(".list-text>i");
 console.log(daohang)
-let xialatuijian = document.querySelectorAll(".daohangtuijian");
+let xialatuijian = document.querySelector(".daohangtuijian");
 console.log(xialatuijian)
-let xialaul = document.querySelectorAll(".daohangtuijian ul");
+let xialaul = document.querySelector(".daohangtuijian ul");
 console.log(xialaul)
-let xialasize = xialaul.length - 1;
-console.log(xialasize)
 daohang.forEach(function(val,index) {
-	console.log(val)
 	val.onmouseover = function() {
-		xialaul.forEach(function(ele,key) {
-			console.log(key)
-			ele.classList.remove("xz");
-			xialatuijian[key].style.top = 135 + "px";
-			xialatuijian[key].style.display = "block";
-		});
-		daohang[index].classList.add("xz");
+		xialatuijian.style.height = "230px";
+		setTimeout(function(){
+			xialaul.style.display ="block";
+		},80);
 	}
-	val.onmouseout = function(){
-		xialatuijian[index].style.display = "none";
+	val.onmouseout = function() {
+		xialatuijian.style.height = "0px";
+		setTimeout(function(){
+			xialaul.style.display ="none";
+		},80);
 	}
 });
-
-
-
-
+xialatuijian.onmouseover = function(){
+	xialatuijian.style.height = "230px";
+	setTimeout(function(){
+		xialaul.style.display ="block";
+	},80);
+}
+xialatuijian.onmouseout = function(){
+	xialatuijian.style.height = "0px";
+	setTimeout(function(){
+		xialaul.style.display ="none";
+	},80);
+}
 //下拉推荐结束
 //搜索开始
 let xiala = document.querySelector(".sousuo .sousuoxiala");
@@ -42,7 +47,7 @@ let Neirong = document.querySelector(".sousuo-neirong"); shuruk.onfocus = functi
 shuruk.onblur = function() {
 	xiala.style.display = "none";
 	sousuobox.style.borderColor = "#E0E0E0";
-	sousuo.style.borderRightColor = "#e0e0e0e";
+	sousuo.style.borderRightColor = "#E0E0E0";
 	Neirong.style.display = "block";
 }
 //搜索结束
