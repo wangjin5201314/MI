@@ -16,3 +16,27 @@ ZH.forEach(function(val, index) {
 		ZH[index].style.color = "#ff6700";
 	}
 });
+
+let phoneObj = document.querySelector(".phone");
+let password = document.querySelector(".password");
+phoneObj.onblur = function(){
+	let val = this.value;
+	if(val.match(/^1(3\d|4[07]|5\d|7[0167]|8\d)\d{8}$/)){
+		this.nextElementSibling.innerHTML = "对";
+		this.nextElementSibling.className = "success";
+	}else{
+		this.nextElementSibling.innerHTML = "错";
+		this.nextElementSibling.className = "error";
+	}
+}
+password.onblur = function(){
+	let val = this.value;
+	if(val.match(/^[A-z0-9_]{8,}$/)){
+		this.nextElementSibling.innerHTML = "对";
+		this.nextElementSibling.className = "success";
+	}else{
+		this.nextElementSibling.innerHTML = "错";
+		this.nextElementSibling.className = "error";
+	}
+}
+

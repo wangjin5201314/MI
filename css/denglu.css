@@ -101,6 +101,21 @@ nav{
 .layout .bottom ul li:nth-child(1){
 	display: block;
 }
+.layout .bottom ul .zh{
+	position: relative;
+}
+.layout .bottom ul .zh p .success{
+	color: green;
+	float: left;
+	padding:10px 8px;
+	margin-top: 15px;
+}
+.layout .bottom ul .zh p .error{
+	color: red;
+	float: left;
+	padding:10px 8px;
+	margin-top: 15px;
+}
 .layout .bottom ul .zh .item_account{
 	width: 346px;
 	height: 48px;

@@ -104,7 +104,7 @@ zuolis.onclick = function() {
 		let hours = Math.floor(chaTime/3600);
 		let minutes = Math.floor(chaTime % 3600/60);
 		let seconds = chaTime % 60;
-		
+
 		document.querySelector(".shangou-bottom-left .end-time .hours").innerHTML = zero(hours);
 		document.querySelector(".shangou-bottom-left .end-time .minutes").innerHTML = zero(minutes);
 		document.querySelector(".shangou-bottom-left .end-time .seconds").innerHTML = zero(seconds);
