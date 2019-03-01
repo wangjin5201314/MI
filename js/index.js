@@ -1,36 +1,25 @@
 window.onload = function() {
 //下拉推荐开始
 let daohang = document.querySelectorAll(".list-text>i");
-console.log(daohang)
 let xialatuijian = document.querySelector(".daohangtuijian");
-console.log(xialatuijian)
-let xialaul = document.querySelector(".daohangtuijian ul");
-console.log(xialaul)
+let xialaul = document.querySelectorAll(".daohangtuijian ul");
 daohang.forEach(function(val,index) {
 	val.onmouseover = function() {
 		xialatuijian.style.height = "230px";
-		setTimeout(function(){
-			xialaul.style.display ="block";
-		},80);
+		xialaul.forEach((ele,key)=>{
+			ele.classList.remove("active");
+		});
+		xialaul[index].classList.add("active");
 	}
 	val.onmouseout = function() {
 		xialatuijian.style.height = "0px";
-		setTimeout(function(){
-			xialaul.style.display ="none";
-		},80);
 	}
 });
 xialatuijian.onmouseover = function(){
 	xialatuijian.style.height = "230px";
-	setTimeout(function(){
-		xialaul.style.display ="block";
-	},80);
 }
 xialatuijian.onmouseout = function(){
 	xialatuijian.style.height = "0px";
-	setTimeout(function(){
-		xialaul.style.display ="none";
-	},80);
 }
 //下拉推荐结束
 //搜索开始
@@ -38,7 +27,8 @@ let xiala = document.querySelector(".sousuo .sousuoxiala");
 let shuruk = document.querySelector(".sousuo input");
 let sousuobox = document.querySelector(".sousuo-box")
 let sousuo = document.querySelector(".sousuo");
-let Neirong = document.querySelector(".sousuo-neirong"); shuruk.onfocus = function() {
+let Neirong = document.querySelector(".sousuo-neirong");
+shuruk.onfocus = function() {
 	xiala.style.display = "block";
 	sousuobox.style.borderColor = "red";
 	sousuo.style.borderRightColor = "red";
@@ -100,6 +90,33 @@ zuolis.onclick = function() {
 	lunboMove();
 }
 //轮播结束
+
+	let endTime = "2019-03-1 18:00:00";
+	let endDate = new Date(endTime);
+	let endTimes = parseInt(endDate.getTime()/1000);
+
+	function setTime(){
+		let nowData = new Date();
+		let nowTime = parseInt(nowData.getTime()/1000);
+
+		let chaTime = endTimes - nowTime;
+
+		let hours = Math.floor(chaTime/3600);
+		let minutes = Math.floor(chaTime % 3600/60);
+		let seconds = chaTime % 60;
+		
+		document.querySelector(".shangou-bottom-left .end-time .hours").innerHTML = zero(hours);
+		document.querySelector(".shangou-bottom-left .end-time .minutes").innerHTML = zero(minutes);
+		document.querySelector(".shangou-bottom-left .end-time .seconds").innerHTML = zero(seconds);
+	}
+	function zero(nums) {
+		return nums >= 10 ? nums : "0" + nums;
+	}
+	setTime();
+	setInterval(setTime,1000);
+
+
+
 //闪购开始时
 let sgleft = document.querySelector(".shangou-top-ic .left");
 let sgright = document.querySelector(".shangou-top-ic .right");
